@@ -12,22 +12,16 @@ public class Author extends Person {
         books = new ArrayList();
     }
 
-    /**
-     * @deprecated Use publishedBooks instead
-     */
-    @Deprecated
-    public List<String> getBooks() {
-        return books;
-    }
-
+    @SuppressWarnings({"unchecked"})
     public List<String> publishedBooks() {
         return books;
     }
 
+    @SuppressWarnings({"unchecked"})
     public void addBook(String book) {
         books.add(book);
     }
-    
+
     public String sortName() {
         return String.format("%s, %s", lastName, firstName);
     }
