@@ -9,7 +9,7 @@ public class Author extends Person {
 
     public Author(String firstName, String lastName) {
         super(firstName, lastName);
-        this.books = new ArrayList<String>();
+        this.books = new ArrayList<>();
     }
 
     public List<String> publishedBooks() {
